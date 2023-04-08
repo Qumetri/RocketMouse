@@ -34,7 +34,7 @@ public class Generator : MonoBehaviour
         {
             int roomIndex = Random.Range(0, rooms.Length);
 
-            farthestX = farthestX + roomSize;
+            farthestX = farthestX + roomSize - 0.1f;
             Vector3 newRoomPos = new Vector3(farthestX, 0, 0);
             GameObject newRoom = Instantiate(rooms[roomIndex], newRoomPos, Quaternion.identity);
             //Destroy(newRoom, 15);
